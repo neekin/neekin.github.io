@@ -14,7 +14,7 @@ const Navbar = () => {
       <NavbarTwoColumns>
         <a href="/">
           <Logo
-            icon={<img src={LogoPng.src} alt={'logo'} width={32} />}
+            icon={<img src={LogoPng.src} alt={'logo'} width={48} />}
             name="Nee Kin's Blog"
           />
         </a>
