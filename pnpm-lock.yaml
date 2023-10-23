@@ -6,13 +6,13 @@ settings:
 
 patchedDependencies:
   astro-boilerplate-components@1.0.15:
-    hash: kfih7oazvl2rjg6cg4yutedihq
+    hash: c4gjeh4asdwafx5ifhymy7e3lm
     path: patches/astro-boilerplate-components@1.0.15.patch
 
 dependencies:
   astro-boilerplate-components:
     specifier: ^1.0.15
-    version: 1.0.15(patch_hash=kfih7oazvl2rjg6cg4yutedihq)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0)
+    version: 1.0.15(patch_hash=c4gjeh4asdwafx5ifhymy7e3lm)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0)
   date-fns:
     specifier: ^2.28.0
     version: 2.30.0
@@ -2072,7 +2072,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /astro-boilerplate-components@1.0.15(patch_hash=kfih7oazvl2rjg6cg4yutedihq)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0):
+  /astro-boilerplate-components@1.0.15(patch_hash=c4gjeh4asdwafx5ifhymy7e3lm)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0):
     resolution: {integrity: sha512-j7v59YKjOIcaXZRt1sD2vyUckZ6g7rRagCiWQ2iTLMjKjAc++ydFAHVglvtGTOoFhbefQAXgy8ZZOgHlIbh69g==}
     peerDependencies:
       astro: 3.3.0

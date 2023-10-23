@@ -65,6 +65,20 @@ const ProjectList = () => (
           </>
         }
       />
+      <Project
+        name="数据聚合"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
+        hendrerit dui odio id enim."
+        link="/"
+        img={{ src: '/assets/images/project-maps.png', alt: 'Project Maps' }}
+        category={
+          <>
+            <Tags color={ColorTags.EMERALD}>Node.js</Tags>
+            <Tags color={ColorTags.INDIGO}>爬虫</Tags>
+          </>
+        }
+      />
     </div>
   </Section>
 );
