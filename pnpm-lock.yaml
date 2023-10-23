@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  astro-boilerplate-components@1.0.15:
+    hash: kfih7oazvl2rjg6cg4yutedihq
+    path: patches/astro-boilerplate-components@1.0.15.patch
+
 dependencies:
   astro-boilerplate-components:
     specifier: ^1.0.15
-    version: 1.0.15(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0)
+    version: 1.0.15(patch_hash=kfih7oazvl2rjg6cg4yutedihq)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0)
   date-fns:
     specifier: ^2.28.0
     version: 2.30.0
@@ -2067,7 +2072,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /astro-boilerplate-components@1.0.15(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0):
+  /astro-boilerplate-components@1.0.15(patch_hash=kfih7oazvl2rjg6cg4yutedihq)(astro@3.3.0)(date-fns@2.30.0)(react@18.2.0):
     resolution: {integrity: sha512-j7v59YKjOIcaXZRt1sD2vyUckZ6g7rRagCiWQ2iTLMjKjAc++ydFAHVglvtGTOoFhbefQAXgy8ZZOgHlIbh69g==}
     peerDependencies:
       astro: 3.3.0
@@ -2078,6 +2083,7 @@ packages:
       date-fns: 2.30.0
       react: 18.2.0
     dev: false
+    patched: true
 
   /astro-eslint-parser@0.2.2:
     resolution: {integrity: sha512-/b5kFxGN+e/YmRfilRF4YfgDqXC98mFlUxz+Ir2WlB2eL2yGXoSq/AJCGjvj5roJ5IsgQjPxfmvmIAGgCpfFTw==}
@@ -2511,6 +2517,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}

@@ -1,0 +1,48 @@
+diff --git a/dist/cjs/components/FooterCopyright.d.ts b/dist/cjs/components/FooterCopyright.d.ts
+index 153a79da35c240c7e91438626298c2976cfecd96..c49047a921906aa291d61bb58eea1e407062b86c 100644
+--- a/dist/cjs/components/FooterCopyright.d.ts
++++ b/dist/cjs/components/FooterCopyright.d.ts
+@@ -1,5 +1,6 @@
+ type IFooterCopyrightProps = {
+     site_name: string;
++    site_beian:string;
+ };
+ declare const FooterCopyright: (props: IFooterCopyrightProps) => import("react/jsx-runtime").JSX.Element;
+ export { FooterCopyright };
+diff --git a/dist/cjs/index.js b/dist/cjs/index.js
+index 18005c4835a247da1c20be641379c017c1489369..825dcf8a9b8c9205e6fe6f3dde3cb30efe344608 100644
+--- a/dist/cjs/index.js
++++ b/dist/cjs/index.js
+@@ -9,7 +9,7 @@ const BlogCard = (props) => (jsxRuntime.jsx("a", { className: "hover:translate-y
+ 
+ const BlogGallery = (props) => (jsxRuntime.jsx("div", { className: "grid grid-cols-1 gap-6 md:grid-cols-3", children: props.postList.map((elt) => (jsxRuntime.jsx(BlogCard, { instance: elt }, elt.url))) }));
+ 
+-const FooterCopyright = (props) => (jsxRuntime.jsx("div", { className: "border-t border-gray-600 pt-5", children: jsxRuntime.jsxs("div", { className: "text-sm text-gray-200", children: ["\u00A9 Copyright ", new Date().getFullYear(), " by ", props.site_name, ". Built with \u2665 by", ' ', jsxRuntime.jsx("a", { className: "text-cyan-400 hover:underline", href: "https://creativedesignsguru.com", target: "_blank", rel: "noopener noreferrer", children: "CreativeDesignsGuru" }), "."] }) }));
++const FooterCopyright = (props) => (jsxRuntime.jsx("div", { className: "border-t border-gray-600 pt-5", children: jsxRuntime.jsxs("div", { className: "text-sm text-gray-200", children: ["\u00A9 Copyright ", new Date().getFullYear(), " by ", props.site_name, ". 备案:", ' ', jsxRuntime.jsx("a", { className: "text-cyan-400 hover:underline", href: "http://beian.miit.gov.cn/", target: "_blank", rel: "noopener noreferrer", children: props.site_beian }), "."] }) }));
+ 
+ const GradientText = (props) => (jsxRuntime.jsx("span", { className: "bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent", children: props.children }));
+ 
+diff --git a/dist/esm/components/FooterCopyright.d.ts b/dist/esm/components/FooterCopyright.d.ts
+index 153a79da35c240c7e91438626298c2976cfecd96..c49047a921906aa291d61bb58eea1e407062b86c 100644
+--- a/dist/esm/components/FooterCopyright.d.ts
++++ b/dist/esm/components/FooterCopyright.d.ts
+@@ -1,5 +1,6 @@
+ type IFooterCopyrightProps = {
+     site_name: string;
++    site_beian:string;
+ };
+ declare const FooterCopyright: (props: IFooterCopyrightProps) => import("react/jsx-runtime").JSX.Element;
+ export { FooterCopyright };
+diff --git a/dist/esm/index.js b/dist/esm/index.js
+index 6cebb2a7eec2822fd0413dd995b4ce30e699065a..64196eba26c30e7050400a684f0caa423898a296 100644
+--- a/dist/esm/index.js
++++ b/dist/esm/index.js
+@@ -5,7 +5,7 @@ const BlogCard = (props) => (jsx("a", { className: "hover:translate-y-1", href:
+ 
+ const BlogGallery = (props) => (jsx("div", { className: "grid grid-cols-1 gap-6 md:grid-cols-3", children: props.postList.map((elt) => (jsx(BlogCard, { instance: elt }, elt.url))) }));
+ 
+-const FooterCopyright = (props) => (jsx("div", { className: "border-t border-gray-600 pt-5", children: jsxs("div", { className: "text-sm text-gray-200", children: ["\u00A9 Copyright ", new Date().getFullYear(), " by ", props.site_name, ". Built with \u2665 by", ' ', jsx("a", { className: "text-cyan-400 hover:underline", href: "https://creativedesignsguru.com", target: "_blank", rel: "noopener noreferrer", children: "CreativeDesignsGuru" }), "."] }) }));
++const FooterCopyright = (props) =>jsx("div", { className: "border-t border-gray-600 pt-5", children: jsxs("div", {className: "text-sm text-gray-200",children: ["\u00A9 Copyright ",  new Date().getFullYear(),        " by ",        props.site_name,        ". 备案:",  " ", jsx("a", { className: "text-cyan-400 hover:underline", href: "http://beian.miit.gov.cn/", target: "_blank", rel: "noopener noreferrer", children: props.site_beian, }),".", ],  }), });
+ 
+ const GradientText = (props) => (jsx("span", { className: "bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent", children: props.children }));
+ 

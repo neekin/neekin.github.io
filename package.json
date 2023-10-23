@@ -58,5 +58,10 @@
   "volta": {
     "node": "16.15.1"
   },
-  "author": "Ixartz (https://github.com/ixartz)"
+  "author": "Ixartz (https://github.com/ixartz)",
+  "pnpm": {
+    "patchedDependencies": {
+      "astro-boilerplate-components@1.0.15": "patches/astro-boilerplate-components@1.0.15.patch"
+    }
+  }
 }
