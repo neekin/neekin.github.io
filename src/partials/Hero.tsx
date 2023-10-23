@@ -14,9 +14,9 @@ const Hero = () => (
       }
       description={
         <>
-          我热衷于成为一名{' '}
+          我热衷于做为一名{' '}
           <a className="text-cyan-400 hover:underline" href="/">
-            全栈开发者，
+            全栈开发者
           </a>{' '}
           ，擅长利用多种技能构建全面的应用。我的技术栈涵盖了{' '}
           <a className="text-cyan-400 hover:underline" href="/">
