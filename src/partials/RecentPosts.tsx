@@ -19,7 +19,7 @@ const RecentPosts = (props: IRecentPostsProps) => (
         </div>
 
         <div className="text-sm">
-          <a href="/posts/">查看所有 Posts →</a>
+          <a href="/posts/">查看所有文章 →</a>
         </div>
       </div>
     }
